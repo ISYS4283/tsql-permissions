@@ -28,13 +28,13 @@ there is a two-step process to setting up authentication:
 first the [server layer](#server-login)
 and then the [database layer](#database-user).
 
-There are two methods by which to authenticate:
+We will cover two methods by which to authenticate:
 [Windows](#windows-authentication) or [SQL](#sql-authentication).
 
 ### Server Login
 
-There is no authorization on the server layer,
-this is managed exclusively on the database layer.
+For the most part, there is no authorization on the server layer,
+this is generally managed only on the database layer.
 
 The server layer has the single responsibility of verifying usernames and passwords.
 
