@@ -104,6 +104,17 @@ and users that are a member of that role inherit those permissions.
 There are a number of [built-in roles][built-in-role-docs]
 provisioned with common privileges.
 
+For example, to grant a user full permissions to a database,
+use the `db_owner` role.
+
+![screenshot](./images/grant-role-0.png)
+
+`db_datareader` is very useful if you want to grant someone readonly access
+to `SELECT` all tables in the database.
+
+`db_datawriter` is very useful for granting users
+`INSERT`, `UPDATE`, and `DELETE` permissions to all tables.
+
 You may also define your own roles and grant them custom permissions.
 
 [authentication-authorization]:https://serverfault.com/q/57077/331028
