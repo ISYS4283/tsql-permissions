@@ -65,6 +65,25 @@ then this is the only method by which to authenticate users.
 Once login credentials have been successfully verified on the server layer,
 now those *server users* must be mapped to locally created *database users*.
 
+Expand database > `Security` and right click `Users` then select `New User...`
+
+![screenshot](./images/new-database-user-0.png)
+
+The database username can be whatever you want, but the login name must match
+exactly the account's server login.
+In order to keep things straight, I recommend making these the same.
+The default schema for a database is `dbo`
+
+![screenshot](./images/new-database-user-1.png)
+
+If you want to add a Windows user, then select that from the dropdown.
+In this case, the user's server login is of the form `WORKGROUP\username`
+
+*Note* that even if a user has a login by virtue of a AD security group,
+you can (usually should) still reference their individual account as the login.
+
+![screenshot](./images/new-database-user-2.png)
+
 ## Authorization
 
 Once the database user has been created, then data permissions can be granted.
